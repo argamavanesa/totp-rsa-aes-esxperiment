@@ -1,0 +1,148 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-06-04 02:08:22",
+      "mode": "plain",
+      "proxy_url": null,
+      "encryption_runtime_ms": 0.0,
+      "server_runtime_ms": 28.225,
+      "total_runtime_ms": 29.052,
+      "response_status_code": 200,
+      "response": {
+        "decrypt_runtime_ms": 0.0,
+        "mode": "plain",
+        "status": "verification success",
+        "total_runtime_ms": 1.034,
+        "verify_runtime_ms": 0.0
+      },
+      "request_error": null
+    },
+    {
+      "timestamp": "2026-06-04 02:08:33",
+      "mode": "rsa",
+      "proxy_url": null,
+      "encryption_runtime_ms": 6.563,
+      "server_runtime_ms": 36.066,
+      "total_runtime_ms": 43.046,
+      "response_status_code": 200,
+      "response": {
+        "decrypt_runtime_ms": 3.987,
+        "mode": "rsa",
+        "status": "verification success",
+        "total_runtime_ms": 4.982,
+        "verify_runtime_ms": 0.474
+      },
+      "request_error": null
+    },
+    {
+      "timestamp": "2026-06-04 02:08:41",
+      "mode": "aes",
+      "proxy_url": null,
+      "encryption_runtime_ms": 2.91,
+      "server_runtime_ms": 29.919,
+      "total_runtime_ms": 34.036,
+      "response_status_code": 200,
+      "response": {
+        "decrypt_runtime_ms": 0.0,
+        "mode": "aes",
+        "status": "verification success",
+        "total_runtime_ms": 1.959,
+        "verify_runtime_ms": 0.0
+      },
+      "request_error": null
+    },
+    {
+      "timestamp": "2026-06-04 02:08:51",
+      "mode": "plain",
+      "proxy_intercept": {
+        "payload_size": 6,
+        "otp": "021622",
+        "attacker_box": "SSL STRIPPING BERHASIL — OTP DICURI\nOTP : 021622\nAttacker bisa langsung replay OTP ini ke server."
+      },
+      "proxy_forward": {
+        "forward_url": "https://127.0.0.1:5000/verify?mode=plain",
+        "forward_status_code": 200,
+        "payload_size": 6
+      }
+    },
+    {
+      "timestamp": "2026-06-04 02:08:51",
+      "mode": "plain",
+      "proxy_url": "http://127.0.0.1:8080",
+      "encryption_runtime_ms": 0.0,
+      "server_runtime_ms": 43.874,
+      "total_runtime_ms": 43.874,
+      "response_status_code": 200,
+      "response": {
+        "decrypt_runtime_ms": 0.0,
+        "mode": "plain",
+        "status": "verification success",
+        "total_runtime_ms": 0.997,
+        "verify_runtime_ms": 0.0
+      },
+      "request_error": null
+    },
+    {
+      "timestamp": "2026-06-04 02:09:05",
+      "mode": "rsa",
+      "proxy_intercept": {
+        "payload_size": 256,
+        "hex_preview": "5f7ca83383509f9a87e083105405e91b14bbb9c48a9fa11e",
+        "note": "RSA ciphertext (256 bytes) | hex: 5f7ca83383509f9a87e083105405e91b14bbb9c48a9fa11e..."
+      },
+      "proxy_forward": {
+        "forward_url": "https://127.0.0.1:5000/verify?mode=rsa",
+        "forward_status_code": 200,
+        "payload_size": 256
+      }
+    },
+    {
+      "timestamp": "2026-06-04 02:09:05",
+      "mode": "rsa",
+      "proxy_url": "http://127.0.0.1:8080",
+      "encryption_runtime_ms": 5.985,
+      "server_runtime_ms": 52.933,
+      "total_runtime_ms": 58.919,
+      "response_status_code": 200,
+      "response": {
+        "decrypt_runtime_ms": 4.998,
+        "mode": "rsa",
+        "status": "verification success",
+        "total_runtime_ms": 5.991,
+        "verify_runtime_ms": 0.0
+      },
+      "request_error": null
+    },
+    {
+      "timestamp": "2026-06-04 02:09:18",
+      "mode": "aes",
+      "proxy_intercept": {
+        "payload_size": 32,
+        "hex_preview": "9559ae2e9398822ab1dd2f935533e0a6c231540dee655493",
+        "note": "IV+ciphertext (32 bytes) | hex: 9559ae2e9398822ab1dd2f935533e0a6c231540dee655493..."
+      },
+      "proxy_forward": {
+        "forward_url": "https://127.0.0.1:5000/verify?mode=aes",
+        "forward_status_code": 200,
+        "payload_size": 32
+      }
+    },
+    {
+      "timestamp": "2026-06-04 02:09:18",
+      "mode": "aes",
+      "proxy_url": "http://127.0.0.1:8080",
+      "encryption_runtime_ms": 4.037,
+      "server_runtime_ms": 45.386,
+      "total_runtime_ms": 50.262,
+      "response_status_code": 200,
+      "response": {
+        "decrypt_runtime_ms": 0.995,
+        "mode": "aes",
+        "status": "verification success",
+        "total_runtime_ms": 2.03,
+        "verify_runtime_ms": 0.0
+      },
+      "request_error": null
+    }
+  ]
+}
